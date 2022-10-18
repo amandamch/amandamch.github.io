@@ -1,0 +1,174 @@
+#intro
+{
+    text-align: center;
+    color: #7D98A1;
+    background-color: #EEF1EF;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+#page-title
+{
+    color: #7D98A1;
+    background-color: #EEF1EF;
+    font-family: 'Abhaya Libre';
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#main-header
+{
+    background-color: #EEF1EF;
+}
+
+.display-5
+{
+    font-family: 'Abhaya Libre';
+    color: #7D98A1;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+.body-text
+{
+    margin-top: 10px;
+    margin-left: 2.25%;
+    margin-right: 2.25%;
+}
+
+.circle-picture
+{
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right:10px;
+    min-width: 300px;
+}
+
+.container-fluid
+{
+    background-color: #7D98A1;
+    color: #2C4251;
+}
+
+a /*keeping the transitions in here so that we can use the same ones in links as well as nav buttons*/
+{
+    color: #7D98A1;
+    text-decoration: none;
+    transition-property: color, background-color, border-color;
+    transition-duration: 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
+}
+
+a:hover
+{
+    color: #2C4251;
+    text-decoration: none;
+    transition-property: color, background-color, border-color;
+    transition-duration: 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
+}
+
+#a-footer
+{
+    color: #7D98A1;
+    text-decoration: none;
+}
+
+#a-footer:hover
+{
+    color: #2C4251;
+    text-decoration: none;
+}
+/* change this to nav link when I've fixed that - this all needs a bit of tweaking */
+
+a.nav-link.active
+{
+    color: #BCC8C0;
+}
+
+a.nav-link
+{
+    padding-bottom: 15px;
+    color: #EEF1EF;
+}
+
+.nav-link:hover
+{
+    color: #2C4251
+}
+
+.bullets
+{
+    margin-left: 2%;
+}
+
+#my-name
+{
+    font-family: 'Abhaya Libre';
+}
+
+footer
+{
+    font-size: small;
+    text-align: center;
+    color: #2C4251;
+    background-color: #EEF1EF;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.image-align
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 2%;
+    max-height: 300px;
+    max-width: 200px;
+}
+
+.alert
+{
+    margin-bottom: 0px;
+    background-color: #2C4251;
+    color: #EEF1EF;
+    border: none;
+}
+
+#kempelen
+{
+    padding-left: 2.25%;
+    padding-top: 10px;
+    margin-right: 2%;
+    max-height: 400px;
+    max-width: 267px;
+}
+
+#kempelenQuote
+{
+    font-size: 36px;
+    text-align: end;
+    padding-right: 2%;
+    font-family: 'Montserrat';
+    color: #2C4251;
+}
+
+#citeKempelen
+{
+    padding-right: 2.5%;
+}
