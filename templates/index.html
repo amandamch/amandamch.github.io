@@ -1,87 +1,73 @@
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
-        <script src="actions.js"></script>
-        <title>Amanda McHugh | About Me</title>
-    </head>
-    <body>
-        <header class="container-fluid">
-            <ul class="nav nav-fill">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="my-research.html">My Research</a></li>
-                <li class="nav-item"><a class="nav-link" href="other-projects.html">Other Projects</a></li>
-                <li class="nav-item"><a class="nav-link noHref" href="#">Rugby Heatmap Generator {coming soon!}</a></li>
-                <li class="nav-item"><a class="nav-link" href="freelancing.html">Freelance Work and Tutoring</a></li>
-            </ul>
-        </header>
-        <div id="liveAlertPlaceholder"></div>
-        <div class="container-fluid text-center" id="main-header">
-            <div class="row align-items-center">
-                <div class="col">
-                    <img alt="Amanda McHugh" class="img-fluid w-25 circle-picture"src="images/KCBCW12022M.jpg">
-                </div>
-                <div class="col-8" id="intro">
-                    <h1 class="display-1" id="my-name"><b>Amanda McHugh</b></h1>
-                    <p>Cambridge BA(Hons) (First Class) Linguistics and MPhil Theoretical and Applied Linguistics, specialising in machine learning approaches to emotion detection.</p>
-                </div>
+{% extends "layout.html" %}
+{% block title %} About Me | Amanda McHugh {% endblock %}
+{% block body %}
+    <header class="container-fluid">
+        <ul class="nav nav-fill">
+            <li class="nav-item"><a class="nav-link active" href="index.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="my-research.html">My Research</a></li>
+            <li class="nav-item"><a class="nav-link" href="/other-projects">Other Projects</a></li>
+            <li class="nav-item"><a class="nav-link noHref" href="#">Rugby Heatmap Generator {coming soon!}</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Freelance Work and Tutoring</a></li>
+        </ul>
+    </header>
+    <div>
+    <div id="liveAlertPlaceholder"></div>
+    <div class="container-fluid text-center" id="main-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <img alt="Amanda McHugh" class="img-fluid w-25 circle-picture"src="static/images/KCBCW12022M.jpg">
+            </div>
+            <div class="col-8" id="intro">
+                <h1 class="display-1" id="my-name"><b>Amanda McHugh</b></h1>
+                <p>Cambridge BA(Hons) (First Class) Linguistics and MPhil Theoretical and Applied Linguistics, specialising in machine learning approaches to emotion detection.</p>
             </div>
         </div>
-        <div class="clearfix">
-            <h2 class="display-5">Creating new solutions within emotion detection</h2>
-            <p>
-                My research centres around exploring how machine learning can be used in emotion detection, specifically at
-                ways of modelling sincerity in empathetic speech. My MPhil research (2021-22) into this builds on my undergraduate dissertation on detection of
-                empathetic speech, which was published in the Undergraduate Linguistics Associate of Britain Proceedings in 2021,
-                viewable <a href="https://zenodo.org/record/5517964#.Y07dh3bMKUm"><b>here</b></a>.
-            </p>
-            <p>
-                At the moment, I'm working on publishing my MPhil thesis, as well as creating new data science portfolio projects in anticipation
-                of applying to positions in mid-2023. If you would like to know more about my MPhil research, check out the <a href="my-research.html"><b>"My Research"</b></a> section.
-            </p>
-            <h2 class="display-5">My other work spans far and wide!</h2>
-            <img src="images/vonkempelen.jpg" class="col float-sm-end image-align">
-            <p>
-                In 2019, I had the privilege of being brought onto a project translating Wolfgang von Kempelen's <i>Le mécanisme de la parole</i>
-                from French into English. The book, originally published in 1792, documents the first recorded effort to create a speech synthesiser,
-                using a wooden box, some bellows, and some clever engineering from a man who had already caused a stir in European intellectual society.
-                To find out more about the book and the man himself, have a look at my <a href="other-projects.html"><b>"Other Projects"</b></a> section. Alternatively, if you've already
-                been sold on reading the book, you can find it stocked at <a href="https://blackwells.co.uk/bookshop/product/The-Mechanism-of-Speech-by-von-Kempelen-Wolfgang/9781725261846">
-                <b>Blackwell's</b></a>, and all other good book retailers.
-            </p>
-            <p>
-                I'm also doing some work on the Cwyzhy dialect of Abkhaz, a Turkish dialect of a minority language found usually in the Abkhazia region
-                of Georgia. Sadly, the final speaker of Cwyzhy Abkhaz died only recently, so this book marks the last possible effort to compile and document
-                what this dialect sounded like. The project has been spanning nearly 25 years, meaning that the work centres around compiling and comparing
-                decades' worth of versions to create one single final version that fully documents this dialect.
-            </p>
-            <p>
-                I am currently additionally freelance editing a book chapter on Armenian Vowel Harmony, set to be published by Oxford University Press in 2023.
-            </p>
-            <h2 class="display-5">Beyond Academia</h2>
-            <img src="images/lineout.jpg" class="col float-sm-end image-align">
-            <img src="images/w1rowing.jpg" class="col float-sm-end image-align">
-            <p>
-                Outside of research, I currently work as a tutor, with both private clients through Witherow Brooke Tuition and Oxbridge Applications (Dukes Education) and with the National Tutoring Programme.
-                The National Tutoring Programme provides one-to-one and small group tutoring to students in schools who would not otherwise be able to
-                access tutoring services, meaning that I get to work with the students who need the most help with their studies. My primary focuses are GCSE-level French, English Language and English Literature, and Oxbridge applications.
-                Please see my <a class="noHref" href="#"><b>freelance work and tutoring</b></a> section for more details about my tutoring services.
-            </p>
-            <p>
-                I'm also a keen musician and athlete; I completed by ARSM diploma in singing in 2018 and after having been a choral scholar at school, I joined King's College as a choral scholar for my
-                undergraduate degree (2018-21), and sang with King's Voices Choir for the whole four years I was at Cambridge, winning the Harmer Prize for choral contributions to King's in 2020. I also played cello in the college
-                orchestra for the music society's termly concerts. I also joined the King's College Boat Club in my first year (2018-19), and rowed throughout my undergraduate
-                and MPhil. I was Vice-Captain in the 2019-20 season, and elected Captain for both the 2020-21 and 2021-22 seasons, winning 1st VIII Lent Colours in every year,
-                and 1st VIII Mays Colours in 2021 and 2022. I've now made the switch to rugby, where I play in the Ladies' 1st XV at <a href="www.twrfc.com"><b>Tunbridge Wells RFC</b></a>.
-            </p>
-        </div>
-        <footer>
-            <b>Get in Touch!</b><br>
-            <a id="a-footer" href="mailto:amanda.mchugh@hotmail.co.uk">amanda.mchugh@hotmail.co.uk</a> | <a id="a-footer" href="mailto:anm46@cantab.ac.uk">anm46@cantab.ac.uk</a>
-        </footer>
-    </body>
-</html>
+    </div>
+    <div class="clearfix">
+        <h2 class="display-5">Creating new solutions within emotion detection</h2>
+        <p>
+            My research centres around exploring how machine learning can be used in emotion detection, specifically at
+            ways of modelling sincerity in empathetic speech. My MPhil research (2021-22) into this builds on my undergraduate dissertation on detection of
+            empathetic speech, which was published in the Undergraduate Linguistics Associate of Britain Proceedings in 2021,
+            viewable <a href="https://zenodo.org/record/5517964#.Y07dh3bMKUm"><b>here</b></a>.
+        </p>
+        <p>
+            At the moment, I'm working on publishing my MPhil thesis, as well as creating new data science portfolio projects in anticipation
+            of applying to positions in mid-2023. If you would like to know more about my MPhil research, check out the <a href="my-research.html"><b>"My Research"</b></a> section.
+        </p>
+        <h2 class="display-5">My other work spans far and wide!</h2>
+        <img src="static/images/vonkempelen.jpg" class="col float-sm-end image-align">
+        <p>
+            In 2019, I had the privilege of being brought onto a project translating Wolfgang von Kempelen's <i>Le mécanisme de la parole</i>
+            from French into English. The book, originally published in 1792, documents the first recorded effort to create a speech synthesiser,
+            using a wooden box, some bellows, and some clever engineering from a man who had already caused a stir in European intellectual society.
+            To find out more about the book and the man himself, have a look at my <a href="other-projects.html"><b>"Other Projects"</b></a> section. Alternatively, if you've already
+            been sold on reading the book, you can find it stocked at <a href="https://blackwells.co.uk/bookshop/product/The-Mechanism-of-Speech-by-von-Kempelen-Wolfgang/9781725261846">
+            <b>Blackwell's</b></a>, and all other good book retailers.
+        </p>
+        <p>
+            I'm also doing some work on the Cwyzhy dialect of Abkhaz, a Turkish dialect of a minority language found usually in the Abkhazia region
+            of Georgia. Sadly, the final speaker of Cwyzhy Abkhaz died only recently, so this book marks the last possible effort to compile and document
+            what this dialect sounded like. The project has been spanning nearly 25 years, meaning that the work centres around compiling and comparing
+            decades' worth of versions to create one single final version that fully documents this dialect.
+        </p>
+        <p>
+            I am currently additionally freelance editing a book chapter on Armenian Vowel Harmony, set to be published by Oxford University Press in 2023.
+        </p>
+        <h2 class="display-5">Beyond Academia</h2>
+        <img src="static/images/lineout.jpg" class="col float-sm-end image-align">
+        <img src="static/images/w1rowing.jpg" class="col float-sm-end image-align">
+        <p>
+            Outside of research, I currently work as a tutor, with both private clients through Witherow Brooke Tuition, Titanium Tutors, and Oxbridge Applications (Dukes Education) and with the National Tutoring Programme.
+            The National Tutoring Programme provides one-to-one and small group tutoring to students in schools who would not otherwise be able to
+            access tutoring services, meaning that I get to work with the students who need the most help with their studies. My primary focuses are GCSE-level French, English Language and English Literature, and Oxbridge applications.
+            Please see my <a class="noHref" href="#"><b>freelance work and tutoring</b></a> section for more details about my tutoring services.
+        </p>
+        <p>
+            I'm also a keen musician and athlete; I completed by ARSM diploma in singing in 2018 and after having been a choral scholar at school, I joined King's College as a choral scholar for my
+            undergraduate degree (2018-21), and sang with King's Voices Choir for the whole four years I was at Cambridge, winning the Harmer Prize for choral contributions to King's in 2020. I also played cello in the college
+            orchestra for the music society's termly concerts. I also joined the King's College Boat Club in my first year (2018-19), and rowed throughout my undergraduate
+            and MPhil. I was Vice-Captain in the 2019-20 season, and elected Captain for both the 2020-21 and 2021-22 seasons, winning 1st VIII Lent Colours in every year,
+            and 1st VIII Mays Colours in 2021 and 2022. I've now made the switch to rugby, where I play in the Ladies' 1st XV at <a href="www.twrfc.com"><b>Tunbridge Wells RFC</b></a>.
+        </p>
+{% endblock %}
