@@ -36,6 +36,32 @@
     margin-left: 2%;
 }
 
+.subheading
+{
+    font-family: 'Abhaya Libre';
+    color: #7D98A1;
+    margin-top: 10px;
+    margin-left: 2%;
+}
+
+.little-heading
+{
+    font-family: 'Abhaya Libre';
+    color: #7D98A1;
+    margin-top: 10px;
+    margin-left: 2%;
+}
+
+img
+{
+    margin-left: 2%;
+}
+
+ol
+{
+    margin-left: 2%;
+}
+
 p
 {
     margin-top: 10px;
